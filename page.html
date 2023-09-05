@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework2</title>
+    <!--ربط الملف-->
+    <link href="page.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="all">
+        <h1>لعبة عبارة عن عمليات جمع وضرب</h1>
+        <!--صناديق الادخال ومعرفاتهم-->
+        <input class="A" id="FirstName" type="text" placeholder="My name" />
+        <p class="A">Player Name</p>
+        <!--نزول سطرين-->
+           <br/><br/>
+        <input class="A" id="Factor" type="number" placeholder="EX:4" />
+        <p class="A">Factor</p>       
+           <br/><br/>        
+        <input class="A" id="NumberOfProblem" type="number" placeholder="EX:3" />
+        <p class="A">Number of problems</p>
+           <br/><br/>
+           <!--لائحة اختيار العملية-->
+        <select class="A" name="operation" id="operation">
+            <option value="Multiply">Multiply</option>
+            <option value="Addition">Addition</option>
+        </select>
+        <p class="A" id="Paragraph">Operation</p> 
+           <br/><br/>
+           <!--ازرار للعب وعرض النتيجة-->
+        <input type="button" name="CS" value="Calculate Score" class="A" id="Calculate_Score" style="background-color: green;" onclick="calculatescore()">
+        <input type="button" name="SG" value="Start Game" class="A" id="Start_Game" style="background-color: red;" onclick="startgame()">
+           <!--رسم خط افقي-->
+        <hr/>
+        <!--تحميل مكتبة العمل والملف الخاص بها (ملف جافا سكريبت)-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script type="text/javascript" src="page.js"></script>
+    </div>
+    <!--تاك لاضافة الامثلة الجديدة فيها-->
+    <div id="add_ex"></div>
+    <!--لعرض النتيجة-->
+    <div id="scoreResult"></div>
+</body>
+</html>
