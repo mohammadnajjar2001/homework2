@@ -37,8 +37,8 @@ function startgame() {
             //تخزين النواتج الفعلية
             result[i] = factor * (i + 1);
             //طباعة العملية الحاسبية وبجانبها صندوق لوضع الاجابة من المستخدم ونزول سطرين
-            $('<p class="A">' + factor + 'x' + (i + 1) + '=  </P>').appendTo('#add_ex');
-            $('<input class="AA"type="number" id="usernumber' + i + '" />').appendTo('#add_ex');
+            $('<p class="in_line">' + factor + 'x' + (i + 1) + '=  </P>').appendTo('#add_ex');
+            $('<input class="boxresultuser"type="number" id="usernumber' + i + '" />').appendTo('#add_ex');
             $('<br/><br/>').appendTo('#add_ex');
         }
     } 
@@ -46,8 +46,8 @@ function startgame() {
     else {
         for (i = 0; i < NumberOfProblems; i++) {
             result[i] = factor*1 + i + 1;
-            $('<p class="A">' + factor + '+' + (i + 1) + '=  </P>').appendTo('#add_ex');
-            $('<input class="AA"type="number" id="usernumber' + i + '"/>').appendTo('#add_ex');
+            $('<p class="in_line">' + factor + '+' + (i + 1) + '=  </P>').appendTo('#add_ex');
+            $('<input class="boxresultuser"type="number" id="usernumber' + i + '"/>').appendTo('#add_ex');
             $('<br/><br/>').appendTo('#add_ex');
         }
     }

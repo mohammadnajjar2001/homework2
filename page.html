@@ -11,42 +11,37 @@
     <div id="all">
         <h1>لعبة عبارة عن عمليات جمع وضرب</h1>
         <!--صناديق الادخال ومعرفاتهم-->
-        <input class="A" id="FirstName" type="text" placeholder="My name" />
-        <p class="A">Player Name</p>
+        <input class="in_line" id="FirstName" type="text" placeholder="My name" />
+        <p class="in_line">Player Name</p>
         <!--نزول سطرين-->
            <br/><br/>
-        <input class="A" id="Factor" type="number" placeholder="EX:4" />
-        <p class="A">Factor</p>       
+        <input class="in_line" id="Factor" type="number" placeholder="EX:4" />
+        <p class="in_line">Factor</p>       
            <br/><br/>        
-        <input class="A" id="NumberOfProblem" type="number" placeholder="EX:3" />
-        <p class="A">Number of problems</p>
+        <input class="in_line" id="NumberOfProblem" type="number" placeholder="EX:3" />
+        <p class="in_line">Number of problems</p>
            <br/><br/>
            <!--لائحة اختيار العملية-->
-        <select class="A" name="operation" id="operation">
+        <select class="in_line" name="operation" id="operation">
             <option value="Multiply">Multiply</option>
             <option value="Addition">Addition</option>
         </select>
-        <p class="A" id="Paragraph">Operation</p> 
+        <p class="in_line" id="Paragraph">Operation</p> 
            <br/><br/>
            <!--ازرار للعب وعرض النتيجة-->
-        <input type="button" name="CS" value="Calculate Score" class="A" id="Calculate_Score" style="background-color: green;" onclick="calculatescore()"onmousemove="scal('Calculate_Score')" onmouseout="not_scal('Calculate_Score')">
-        <input type="button" name="SG" value="Start Game" class="A" id="Start_Game" style="background-color: red;" onclick="startgame()"onmousemove="scal('Start_Game')" onmouseout="not_scal('Start_Game')">
+        <input type="button" name="CS" value="Calculate Score" class="in_line" id="Calculate_Score" style="background-color: green;" onclick="calculatescore()"onmousemove="scal('Calculate_Score')" onmouseout="not_scal('Calculate_Score')">
+        <input type="button" name="SG" value="Start Game" class="in_line" id="Start_Game" style="background-color: red;" onclick="startgame()"onmousemove="scal('Start_Game')" onmouseout="not_scal('Start_Game')">
            <!--رسم خط افقي-->
         <hr/>
      </div>
      <div id="hidden">
-        <!--تاك لاضافة الامثلة الجديدة فيها-->
-     <div id="add_ex"></div> 
-     <!--لعرض النتيجة-->
-     <div id="scoreResult">
-
-      </div>
-
-     </div>
-          
-          <!--تحميل مكتبة العمل والملف الخاص بها (ملف جافا سكريبت)-->
+         <!--تاك لاضافة الامثلة الجديدة فيها-->
+        <div id="add_ex"></div> 
+         <!--لعرض النتيجة-->
+        <div id="scoreResult"></div>
+     </div>    
+      <!--تحميل مكتبة العمل والملف الخاص بها (ملف جافا سكريبت)-->
      <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
      <script type="text/javascript" src="page.js"></script>
- 
 </body>
 </html>

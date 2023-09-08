@@ -9,7 +9,7 @@
 /*
 لضبك العناصر على نفس السطر
 */
-.A{
+.in_line{
     display: inline
 }
 /*
@@ -43,12 +43,15 @@
 /*
 تنسيق لمربع الحاوي على الاجابة المدخلة من المستخدم
 */
-input.AA{
+input.boxresultuser{
     display: inline;
     background-color: slateblue;
     border-top-left-radius: 10px;
     width: 50px;
     height: 20px;
+}
+#scoreResult{
+    font-weight: bolder;
 }
 /*
 مكان تموضع العناصر الجديدة
