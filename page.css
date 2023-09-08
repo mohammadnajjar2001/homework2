@@ -13,13 +13,25 @@
     display: inline
 }
 /*
+تنسيق اجرائيات اللعبة (الزرين)
+*/
+#Start_Game,#Calculate_Score{
+    margin: 0 10px;
+    border: 1px blue solid;
+}
+
+/*
 للنصوص المدخلة من المستخدم
 */
 #FirstName,#Factor,#NumberOfProblem{
+    background-color: aquamarine;
     color: red;
     width: 200px;
     height: 20px; 
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
+
 /*
 تنسيق لاختيار العملية 
 */
@@ -31,6 +43,8 @@
 تنسيق لمربع الحاوي على الاجابة المدخلة من المستخدم
 */
 #usernumber{
+    background-color: slateblue;
+    border-top-left-radius: 10px;
     width: 50px;
     height: 20px;
 }

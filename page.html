@@ -29,17 +29,18 @@
         <p class="A" id="Paragraph">Operation</p> 
            <br/><br/>
            <!--ازرار للعب وعرض النتيجة-->
-        <input type="button" name="CS" value="Calculate Score" class="A" id="Calculate_Score" style="background-color: green;" onclick="calculatescore()">
-        <input type="button" name="SG" value="Start Game" class="A" id="Start_Game" style="background-color: red;" onclick="startgame()">
+        <input type="button" name="CS" value="Calculate Score" class="A" id="Calculate_Score" style="background-color: green;" onclick="calculatescore()"onmousemove="scal('Calculate_Score')" onmouseout="not_scal('Calculate_Score')">
+        <input type="button" name="SG" value="Start Game" class="A" id="Start_Game" style="background-color: red;" onclick="startgame()"onmousemove="scal('Start_Game')" onmouseout="not_scal('Start_Game')">
            <!--رسم خط افقي-->
         <hr/>
-        <!--تحميل مكتبة العمل والملف الخاص بها (ملف جافا سكريبت)-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-        <script type="text/javascript" src="page.js"></script>
-    </div>
-    <!--تاك لاضافة الامثلة الجديدة فيها-->
-    <div id="add_ex"></div>
-    <!--لعرض النتيجة-->
-    <div id="scoreResult"></div>
+         <!--تحميل مكتبة العمل والملف الخاص بها (ملف جافا سكريبت)-->
+         <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+         <script type="text/javascript" src="page.js"></script>
+      </div>
+     <!--تاك لاضافة الامثلة الجديدة فيها-->
+     <div id="add_ex"></div> 
+          <!--لعرض النتيجة-->
+     <div id="scoreResult"></div>
+ 
 </body>
 </html>

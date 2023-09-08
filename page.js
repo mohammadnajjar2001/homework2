@@ -4,10 +4,23 @@ let factor;
 let NumberOfProblems;
 let result;
 let resultuserTorF;
+
+/*
+تحجيم ازرار اللعبة عند وضع الماوس عليهم
+كان بالامكان عملهم بملف سي اس اس وبطؤيقة ابسط لكن عملتها على سبيل التجربة
+*/
+function scal(ID){
+    document.getElementById(ID).style.scale=1.1;
+    }
+function not_scal(ID){
+        document.getElementById(ID).style.scale=1;
+}
+
 //دالة بدء اللعبة
 function startgame() {
     //مسح المحتوى القديم لظهور المحتوى الجديد فقط
     document.getElementById('add_ex').innerHTML="";
+    document.getElementById('scoreResult').innerHTML ="";
     //جلب القيمة المدخلة للمتغيرات وبناء اللعبة عليها
     firstname = document.getElementById('FirstName').value;
     factor = document.getElementById('Factor').value;
