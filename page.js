@@ -10,7 +10,7 @@ let resultuserTorF;
 كان بالامكان عملهم بملف سي اس اس وبطؤيقة ابسط لكن عملتها على سبيل التجربة
 */
 function scal(ID){
-    document.getElementById(ID).style.scale=1.1;
+    document.getElementById(ID).style.scale=1.2;
     }
 function not_scal(ID){
         document.getElementById(ID).style.scale=1;
@@ -20,6 +20,7 @@ function not_scal(ID){
 function startgame() {
     //مسح المحتوى القديم لظهور المحتوى الجديد فقط
     document.getElementById('add_ex').innerHTML="";
+    //لمسح النتيجة القديمة المخزنة
     document.getElementById('scoreResult').innerHTML ="";
     //جلب القيمة المدخلة للمتغيرات وبناء اللعبة عليها
     firstname = document.getElementById('FirstName').value;
@@ -37,7 +38,7 @@ function startgame() {
             result[i] = factor * (i + 1);
             //طباعة العملية الحاسبية وبجانبها صندوق لوضع الاجابة من المستخدم ونزول سطرين
             $('<p class="A">' + factor + 'x' + (i + 1) + '=  </P>').appendTo('#add_ex');
-            $('<input class="A" type="number" id="usernumber' + i + '" />').appendTo('#add_ex');
+            $('<input class="AA"type="number" id="usernumber' + i + '" />').appendTo('#add_ex');
             $('<br/><br/>').appendTo('#add_ex');
         }
     } 
@@ -46,13 +47,16 @@ function startgame() {
         for (i = 0; i < NumberOfProblems; i++) {
             result[i] = factor*1 + i + 1;
             $('<p class="A">' + factor + '+' + (i + 1) + '=  </P>').appendTo('#add_ex');
-            $('<input class="A" type="number" id="usernumber' + i + '"/>').appendTo('#add_ex');
+            $('<input class="AA"type="number" id="usernumber' + i + '"/>').appendTo('#add_ex');
             $('<br/><br/>').appendTo('#add_ex');
         }
     }
+    $('#hidden #add_ex').slideUp(4);
+    $('#hidden #add_ex').slideDown(4000);
 }
 //دالة طلب النتيجة
 function calculatescore() {
+    $('#hidden #add_ex').slideUp(2500);
     //متغير لتخزين عدد الاجوبة الصحيحة
     let correctAnswers = 0;
     for (let i = 0; i < NumberOfProblems; i++) {
@@ -65,5 +69,6 @@ function calculatescore() {
         }    
     }
     //عرض النتيجة عند طلبها
-    document.getElementById('scoreResult').innerHTML = 'عدد الإجابات الصحيحة الحالية قبل اعادة بدء اللعبة مرة ثانية : ' + correctAnswers;
+    document.getElementById('scoreResult').innerHTML = 'نتيجتك هي :' + correctAnswers+' من '+NumberOfProblems;
 }
+

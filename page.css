@@ -24,6 +24,7 @@
 للنصوص المدخلة من المستخدم
 */
 #FirstName,#Factor,#NumberOfProblem{
+    text-align: center;
     background-color: aquamarine;
     color: red;
     width: 200px;
@@ -42,9 +43,19 @@
 /*
 تنسيق لمربع الحاوي على الاجابة المدخلة من المستخدم
 */
-#usernumber{
+input.AA{
+    display: inline;
     background-color: slateblue;
     border-top-left-radius: 10px;
     width: 50px;
     height: 20px;
+}
+/*
+مكان تموضع العناصر الجديدة
+*/
+#hidden{
+    min-width: 200px;
+    min-height: 100px;
+    margin:0 50% 0 50%;
+
 }
