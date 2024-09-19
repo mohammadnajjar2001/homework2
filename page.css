@@ -3,7 +3,7 @@
 */
 body{
     
-    background-image: url('photo.jpg');
+    background-image: url('photo.png');
     background-repeat: repeat-y; /* لتغطية الخلفية كاملة */
     background-position: center; /* لتوسيط الخلفية */
 }
