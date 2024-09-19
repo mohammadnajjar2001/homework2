@@ -1,13 +1,16 @@
 /*
 تنسيق الحاوية الرئيسية
 */
+body{
+    
+    background-image: url('photo.jpg');
+    background-size: cover; /* لتغطية الخلفية كاملة */
+    background-position: center; /* لتوسيط الخلفية */
+}
 #all{
     direction: rtl;
     position: relative;
     right: 35%;
-    background-image: url('photo.jpg');
-    background-size: cover; /* لتغطية الخلفية كاملة */
-    background-position: center; /* لتوسيط الخلفية */
 }
 
 }
