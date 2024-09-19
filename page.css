@@ -4,15 +4,13 @@
 body{
     
     background-image: url('photo.jpg');
-    background-size: cover; /* لتغطية الخلفية كاملة */
+    background-repeat: repeat-y; /* لتغطية الخلفية كاملة */
     background-position: center; /* لتوسيط الخلفية */
 }
 #all{
     direction: rtl;
     position: relative;
     right: 35%;
-}
-
 }
 /*
 لضبك العناصر على نفس السطر
